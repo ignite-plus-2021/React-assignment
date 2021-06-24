@@ -1,0 +1,20 @@
+.header-span
+{
+    background-color: midnightblue;
+    height:10%;
+}
+.nav
+{
+    text-decoration: none;
+    padding:20px;
+    font-size: 25px;
+    color:white;
+}
+.nav :hover
+{
+    color:yellow;
+}
+.nav :active
+{
+    color: yellow;
+}

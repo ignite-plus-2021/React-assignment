@@ -1,0 +1,14 @@
+.footer
+{
+    background-color: lavender;
+    text-align:justify;
+    margin-left: 260px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+.link 
+{
+    padding:90px;
+    
+}

@@ -1,0 +1,15 @@
+.contact
+{
+    background-color:teal ;
+    display: flex;
+    flex-flow: column;
+    height: 1000px;
+    margin-left: 0x;
+}
+.con
+{
+    
+    color: wheat;
+    padding:60px;
+    font-size: 30px;
+}

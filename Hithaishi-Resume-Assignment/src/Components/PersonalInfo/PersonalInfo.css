@@ -1,0 +1,15 @@
+.pesonal-info
+{
+    background-color:teal ;
+    display: flex;
+    flex-flow: column;
+    height: 1000px;
+    margin-left:0px;
+}
+.info
+{
+    
+    color: wheat;
+    padding:30px;
+    font-size: 30px;
+}
