@@ -1,0 +1,31 @@
+.about
+{
+    background-color: teal;
+    display: flex;
+    flex-flow: column;
+    height: 1000px;
+}
+h3,h1,p
+{
+    color:whitesmoke;
+    
+}
+h3,h1
+{
+    text-align: center;
+}
+p
+{
+    text-align: justify;
+    margin: 20px;
+    font-size: 30px;
+    padding-top:50px;
+}
+h1{
+    font-size: 70px;
+}
+h3
+{
+    font-size: 50px;
+    padding-top:100px;
+}
