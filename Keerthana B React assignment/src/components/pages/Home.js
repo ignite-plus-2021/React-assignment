@@ -7,7 +7,6 @@ import Contact from '../../components/pages/contact/Contact';
 import Personal_information from '../../components/pages/personal_information/Personal_information';
 import Experiences from '../../components/pages/experiences/Experiences';
 import Educations from '../../components/pages/educations/Educations';
-import Portfolios from '../../components/pages/portfolios/Portfolios';
 import Footer from '../../components/footer/Footer';
 
 export default class Home extends Component {
