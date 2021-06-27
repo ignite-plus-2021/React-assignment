@@ -11,7 +11,7 @@ export default function Experiences() {
           </h6>
           <div className="row mt-top">
             <div className="col xl4 l4 m6 s12">
-              <p className="teal year_exp white-text">
+              <p className="indigo lighten-4">
                 Oct 2020 - Jan 2021
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function Experiences() {
           </div>
           <div className="row mt-top">
             <div className="col xl4 l4 m6 s12">
-              <p className="teal year_exp white-text">
+              <p className="indigo lighten-4">
                 Sep 2020 - Oct 2020
               </p>
             </div>
@@ -58,7 +58,7 @@ export default function Experiences() {
           </div>
           <div className="row mt-top">
             <div className="col xl4 l4 m6 s12">
-              <p className="teal year_exp white-text">
+              <p className="indigo lighten-4">
                 July 2020 - Sep 2020
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function Experiences() {
           </div>
           <div className="row mt-top">
             <div className="col xl4 l4 m6 s12">
-              <p className="teal year_exp white-text">
+              <p className="indigo lighten-4">
                 May 2020 - June 2020
               </p>
             </div>
