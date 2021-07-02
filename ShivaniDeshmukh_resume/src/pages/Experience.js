@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 import ExpSection from '../Components/ExpSection';
-import Contact from './Contact';
 const Expstyles=styled.div`
     background-color:Azure;
     text-align: center;
     font-family:Georgia;
-    padding: 4rem 3rem 0 0;
+    padding: 4rem 3rem;
 
     .p{
         font-size:2.3rem;   
@@ -35,7 +34,7 @@ const Experience = () => {
                     <ExpSection title="Project2" desc="Bill Splitting application"></ExpSection>
 
                 </div>
-                <Contact/>
+                
             </div>
             
         </Expstyles>
