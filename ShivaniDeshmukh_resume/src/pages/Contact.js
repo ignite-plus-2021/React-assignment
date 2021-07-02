@@ -5,7 +5,7 @@ const ContactStyles = styled.div`
     background-color:LightGrey;
     .col1{
         margin:0 1 rem;
-        padding:20px 0;
+        padding:20px 50px;
         
     }
     .ln
