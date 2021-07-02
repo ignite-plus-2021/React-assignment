@@ -1,0 +1,22 @@
+.section-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contact-container {
+  margin: 16px 0px;
+  font-size: 22px;
+  /* font-weight: 600; */
+  text-align: center;
+}
+
+.contact-para {
+  margin-bottom: -22px;
+}
+
+@media only screen and (max-width: 720px) {
+  .contact-container {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}

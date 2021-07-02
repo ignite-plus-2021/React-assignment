@@ -1,0 +1,57 @@
+.education {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  padding: 15px 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lists {
+  margin-left: 14px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.content {
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.company-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+
+.link {
+  color: darkmagenta;
+  text-decoration: none;
+}
+
+.data {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
