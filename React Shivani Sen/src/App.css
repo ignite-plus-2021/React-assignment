@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+
+:root {
+  --primary-white: #fff;
+  --primary-yellow: #ffc107;
+  --primary-blue: #0d6efd;
+  --primary-green: #20c997;
+  --primary-black:#212529;
+}
+
+body{
+  font-family:'Roboto Condensed' ,sans-serif;
+}
+/*navbar links */
+nav a.nav-link{
+  font-weight:600;
+  letter-spacing:0.0375rem;
+  cursor:pointer;
+  
+}
+
+nav ul li{
+  text-transform: uppercase;
+  
+}
+
+.navbar-nav > li > a {
+  color: var(--primary-white) !important;
+  margin-right:0.75rem;
+  margin-left:0.75rem;
+}
+
+.navbar-brand {
+  font-family: "Georgia";
+  font-size: 1.4rem !important;
+  color: var(--primary-white) !important;
+  font-weight: 100;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-bottom: 0.1880rem solid var(--primary-green);
+}
+
+.navbar-nav > li > a:hover{
+  border-bottom: 0.1880rem solid var(--primary-green);
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+/************ header*********/
+
+.header-wrapper {
+  position: relative;
+  background: url(backgroundmain.webp) no-repeat;
+  background-size: cover;
+  background-position : center;
+  height : 100vh;
+}
+
+.main-info{
+  display:flex;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Benne', serif;
+  
+}
+
+.main-info h1{
+  font-size:60px;
+  color: var(--primary-black) ;
+  font-weight:600;
+}
+
+.typed-text{
+  font-size: 2.3rem;
+  color: var(--primary-black);
+  font-weight:600;
+}
+
+@media(max-width:768px){
+  .main-info h1{
+    font-size:1.3 rem !important;
+  }
+  .typed-text{
+    font-size:1.1 rem !important;
+  }
+}
+
+/********************** about******************************/
+
+.about-me h1{
+  text-align:center;
+  margin:5vh;
+}
+
+
+
+.about-img{
+
+  height:30vh;
+  width:27.5vh;
+  border-radius:50% ;
+  display: flex;
+  float:left;
+  justify-content: space-between;
+  overflow:hidden;
+  transition: transform .2s;
+  /* margin-left:10%; */
+}
+
+.about-img:hover {
+  transform: scale(1.3); 
+}
+
+.about-text{
+  max-width:700px;
+  width:100%;
+   display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size:20px;
+  padding: 1rem;
+  font-family: Cambria,  serif;
+}
+
+
+.about-me-container {
+  max-width: 1000px;
+  width:100%;
+  margin-top: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width:768px){
+  .about-img{
+    margin-left:50%;
+    margin-right:50%;
+    
+  }
+
+
+  .about-me-container{
+    flex-flow: column;
+    margin:0 auto;
+  }
+}
+/***************work**************/
+
+.cards {
+  /* padding: 4rem; */
+  background:whitesmoke;
+  margin:60px;
+}
+
+/*.cards__items li{
+  display:inline;
+}*/
+.cards h1 {
+  color: black;
+  font-size:40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cards__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__wrapper {
+  position: relative;
+  margin: 45px 0 45px;
+}
+
+.cards__items {
+  margin-bottom: 24px;
+}
+
+.cards__item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 10px;
+  margin-right: 3rem;
+}
+
+.cards__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+.cards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: yellow;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.cards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.cards__item__img:hover {
+  transform: scale(1.1);
+}
+
+.cards__item__info {
+  padding: 20px 30px 30px;
+}
+
+.cards__item__text {
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width:768px){
+  .cards h1{
+    font-size:25px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .content__blog__container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards__item {
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+  }
+}
+
+
+/***************footer ******************/
+
+.contact-footer{
+  background:black;
+  padding: 25px 50px;
+  text-align:center;
+}
+
+.contact-footer a{
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+.contact-footer a:hover{
+  transform: translateY(-2px);
+}
+
+.contact-footer h3{
+  color:white;
+  font-size:25px;
+}
+
+.contact-footer h5{
+  color:white;
+  font-size:15px;
+}
+
+a.linkedin-social{
+  color:#0e76a8;
+}
+a.github-social{
+  color:white;
+}
+a.blogger-social{
+  color:rgb(252, 111, 30);
+}
+
+@media only screen and (max-width:786px){
+  .contact-footer h3{
+    font-size:20px;
+  }
+
+  a.linkedin-social{
+    color:#0e76a8;
+    font-size:15px;
+  }
+  a.github-social{
+    color:white;
+    font-size:15px;
+  }
+  a.blogger-social{
+    color:rgb(252, 111, 30);
+    font-size:15px;
+  }
+}
